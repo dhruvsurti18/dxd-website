@@ -1,0 +1,147 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Your Courses – Login Now</title>
+    <link rel="stylesheet" href="./assests/css/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assests/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="./assests/css/fonts.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+    <link rel="icon" href="./assests/img/logo-2-fav.png">
+</head>
+<body>
+   <!-- Navigation -->
+ <header class="nav-botton">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" data-aos="fade-down">
+    <div class="container-fluid mx-5">
+      <div class="navbar-brand col">
+        <a class="logo" href="index.html">
+          <img src="./assests/img/LOGO-removebg-preview.png" alt="">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav fs-5 ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active text-black" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="./courses.html">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-black" href="./contact.html">Contact</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary" href="./login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+  <div class="page-header" data-aos="fade-up">
+  <div class="overlay"></div>
+  <div class="container text-center text-white">
+      <h1 class="display-4 fw-bold animated-title">Login here</h1>
+      <p class="fw-normal pt-3">We're here to help you on your learning journey</p>
+      <div class="text-center mt-4 back-home">
+        <a href="./index.html" class="btn btn-home">Back to Home</a>
+    </div>
+  </div>
+</div>
+
+    <main  class="login-bg" data-aos="fade-up ">
+        <div class="container py-120">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-10">
+                    <div class="login-container" data-aos="slide-right">
+                        <div class="row g-0">
+                            <!-- Login Form Section -->
+                            <div class="col-md-6 p-5">
+                                <h2 class="fw-bold text-primary mb-2">Welcome Back!</h2>
+                                <p class="text-muted mb-4">Please login to your account</p>
+                                
+                                <form>
+                                    <div class="mb-4">
+                                        <label class="form-label">Email Address</label>
+                                        <div class="input-group">
+                                            <input type="email" class="form-control" placeholder="Enter your email">
+                                        </div>
+                                    </div>
+    
+                                    <div class="mb-4">
+                                        <label class="form-label">Password</label>
+                                        <div class="input-group">
+                                            <input type="password" class="form-control" placeholder="Enter your password">
+                                        </div>
+                                    </div>
+    
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <a href="#" class="text-primary text-decoration-none">Forgot Password?</a>
+                                    </div>
+    
+                                    <button class="btn btn-login w-100 mb-4 py-2 rounded-3">
+                                      <a class="text-white text-decoration-none" href="./index.html">Sign-in</a>
+                                    </button>
+    
+                                    <p class="text-center text-muted">
+                                        Don't have an account? <a href="#" class="text-primary text-decoration-none">Sign Up</a>
+                                    </p>
+                                </form>
+                            </div>
+    
+                            <!-- Image Carousel Section -->
+                            <div class="col-md-6">
+                                <div class="carousel-container">
+                                    <div id="loginCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assests/img/login-1.jpg" alt="Online Learning">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assests/img/login-2.jpg" alt="Virtual Classroom">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assests/img/login-3.jpg" alt="Student Success">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </main>
+    <script src="./assests/js/bootstrap.bundle.min.js"></script>
+    <script>
+      // Navbar Scroll Effect
+      window.addEventListener("scroll", function () {
+        let navbar = document.querySelector(".navbar");
+  
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+  
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+</body>
+</html>
